@@ -1,0 +1,36 @@
+.basket{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    table{
+        width: 70%;
+        text-align: center;
+        .buttons{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-evenly;
+            .minus{
+                background-color: rgb(201, 30, 30);
+                color: white;
+                border: none;
+                padding: 5px;
+            }
+            .plus{
+                background-color: rgb(20, 105, 49);
+                color: white;
+                border: none;
+                padding: 5px;
+            }
+        }
+        .remove{
+            background-color: rgb(201, 30, 30);
+            color: white;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    
+}

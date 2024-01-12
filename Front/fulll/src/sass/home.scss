@@ -1,0 +1,123 @@
+.home{
+    .three{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(231, 227, 227);
+        h1{
+            color: #007bff;
+            font-family: serif;
+            font-size: 50px;
+        }
+        input{
+            margin-top: 30px;
+            width: 500px;
+            background-color: transparent;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #007bff;
+            outline: none;
+        }
+        .cards{
+            margin: 50px auto;
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 40px;
+            .card{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                background-color: white;
+                width: 350px;
+                height: 370px;
+                padding: 30px;
+                gap: 20px;
+                position: relative;
+                .icon{
+                    color: #007bff;
+                    font-size: 50px;
+                }
+                h3{
+                    color: black;
+                }
+                p{
+                    color: rgb(51, 51, 51);
+                }
+                a{
+                    color: #007bff;
+                }
+                button{
+                    border: none;
+                    width: 350px;
+                    height: 43px;
+                    opacity: 0;
+                    transition: 0.3s;
+                    color: white;
+                    cursor: pointer;
+                    background-color: #007bff;
+                    font-size: 17px;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                }
+                &:hover{
+                  button{
+                    opacity: 1;
+                  }
+                }
+
+                .eye{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background-color: #007bff;
+                    position: absolute;
+                    top: 65px;
+                    right: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.4s;
+                    i{
+                        color: white;
+                    }
+                    &:hover{
+                        background-color: rgb(231, 227, 227);
+                        i{
+                            color: #007bff;
+                        }
+                    }
+                }
+
+                .heart{
+                    width: 35px;
+                    height: 35px;
+                    border-radius: 50%;
+                    background-color: #007bff;
+                    position: absolute;
+                    top: 20px;
+                    right: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.4s;
+                    i{
+                        color: white;
+                    }
+                    &:hover{
+                        background-color: rgb(231, 227, 227);
+                        i{
+                            color: #007bff;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
